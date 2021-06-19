@@ -1,0 +1,190 @@
+body{
+    overflow-x: hidden;
+}
+.navbar-brand{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.nav-link{
+    margin-right: 20px;
+    font-size: 20px;
+}
+/* master head start CSS */
+.master-head{
+    position: relative;
+    padding: 20px;
+    background-image: url(../img/cloud-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 432px;
+    color: white;
+}
+.master-head ul li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+.master-head ul li a:hover{
+    text-decoration: underline;
+}
+.master-head ul li a{
+    color: white;
+    text-decoration: none;
+}
+.master-head h1{
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.bagian-bawah{
+    position: absolute;
+    bottom: 0;
+}
+.master-head .bagian-bawah a{
+    text-decoration: none;
+    color: silver;
+    font-weight: 600;
+    font-size: 20px;
+}
+.master-head .bagian-bawah p{
+    margin-bottom: 8px;
+    margin-left: 40px;
+}
+.master-head .bagian-bawah :nth-child(3){
+    background-color: rgb(57,57,57);
+    padding: 0 3px 0 3px;
+    border-radius: 10px;
+}
+.master-head .bagian-bawah a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+/* side bagian kiri */
+.sidekiri{
+    float: left;
+    width: 280px;
+    margin: 50px;
+}
+.sidekiri :nth-child(1){
+    border-left-color: blue;
+}
+.sidekiri :nth-child(1):hover{
+    border-left-color: blue;
+}
+.sidekiri :nth-child(2){
+    height: 50px;
+}
+.sidekiri label{
+    height: 50px;
+    border-left: 4px solid rgb(224,224,224);
+}
+.sidekiri label:hover{
+    border-left: 4px solid silver;
+}
+.sidekiri label a{
+    display: block;
+    margin-left: 14px;
+    color: black;
+    text-decoration: none;
+}
+.sidekiri label a:hover{
+    text-decoration: underline;
+}
+/* bagian mid */
+        /* pengertian */
+.middle{
+    margin-top: 30px;
+    margin-left: 40px;
+    float: left;
+    width: 600px;
+}
+.middle #pengertian h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: serif;
+}
+.middle #pengertian p{
+    margin-bottom: 40px;
+    font-size: 25px;
+    opacity: 0.7;
+}
+        /* tipe */
+.middle #tipe{
+    margin-top: 50px;
+}
+.middle #tipe h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: serif;
+}
+.middle #tipe p{
+    margin-bottom: 30px;
+    text-align: justify;
+    opacity: 0.7;
+    font-size: 20px;
+}
+        /* perbedaan, apk, ibm */
+        .middle #perbedaan, .middle #apk, .middle #ibm, {
+            margin-top: 50px;
+        }
+        .middle #perbedaan h1, .middle #apk h1, .middle #ibm h1{
+            margin-bottom: 30px;
+            font-size: 50px;
+            font-family: serif;
+        }
+        .middle #perbedaan p, .middle #apk p, .middle #apk ol li, .middle #ibm p{
+            text-align: justify;
+            opacity: 0.7;
+            font-size: 20px;
+            margin-bottom: 30px;
+
+        }
+        #perbedaan img{
+            margin: 20px 0 20px 0;
+            width: 400px;
+            height: 300px;
+        }
+/* bagian kanan */
+.sidekanan{
+    float: right;
+    width: 250px;
+    margin: 50px 0 50px 30px;
+}
+.sidekanan h6{
+    margin-bottom: 20px;
+}
+.sidekanan p{
+    height: 40px;
+}
+.sidekanan p a{
+    font-family: serif;
+    text-decoration: none;
+}
+.sidekanan p a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:576px){
+    .master-head ul :nth-child(2){
+        display: none;
+    }
+    .master-head h1{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .middle{
+        width: auto;
+        height: auto;
+    }
+    #pengertian, #tipe, #apk, #perbedaan, #ibm{
+        margin-right: 20px;
+    }
+    .sidekiri, .sidekanan{
+        display: none;
+    }
+    #ibm{
+        height: 600px;
+    }
+}
